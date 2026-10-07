@@ -1,0 +1,36 @@
+/* ============================================
+   EL-MESBAH — Design Tokens
+   Single source of truth for colors, spacing,
+   typography, motion.
+   ============================================ */
+
+:root {
+  /* --- Colors --- */
+  --ink:   #0c0b0a;   /* near-black background */
+  --ink2:  #171512;   /* slightly lifted dark surface */
+  --ivory: #f2ede2;   /* warm off-white */
+  --amber: #e9a53b;   /* brand accent */
+  --g1:    #8d877b;   /* muted gray (light contexts) */
+  --g2:    #4a463f;   /* muted gray (dark contexts) */
+
+  /* --- Typography --- */
+  --f: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+
+  /* --- Layout --- */
+  --wrap-x: clamp(20px, 5vw, 72px);
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(.2, .8, .2, 1);
+  --ease-soft: cubic-bezier(.2, .7, .2, 1);
+  --ease-long: cubic-bezier(.6, 0, .2, 1);
+  --dur-fast: .3s;
+  --dur-base: .5s;
+  --dur-slow: .9s;
+
+  /* --- Radii --- */
+  --r-pill: 99px;
+
+  /* --- Focus --- */
+  --focus-ring: 2px solid var(--amber);
+  --focus-offset: 4px;
+}

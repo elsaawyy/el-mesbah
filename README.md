@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EL-MESBAH
+
+Production web app for **EL-MESBAH** — a software, AI, and automation solutions company.
+
+Built with **Next.js (App Router)**, **React**, **TypeScript**, and **plain CSS**.
+
+---
+
+## Requirements
+
+* Node.js 20+ (tested on 24.11.1)
+* npm 10+
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Script          | Purpose                                     |
+| --------------- | ------------------------------------------- |
+| `npm run dev`   | Start the development server with Turbopack |
+| `npm run build` | Create a production build                   |
+| `npm run start` | Run the production build locally            |
+| `npm run lint`  | Run ESLint                                  |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```text
+app/
+  Next.js App Router routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+components/
+  home/          Home page sections
+  layout/        Navigation and Footer
+  projects/      ProjectMockup
+  ui/            Button, Tag, Reveal, SkipLink
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+hooks/
+  Custom React hooks
+
+lib/
+  content/       Typed content data
+  seo/           Metadata helpers
+  utils/         Small utilities
+
+styles/
+  tokens.css
+  reset.css
+  components.css
+
+docs/
+  Architecture and phase checklists
+
+public/
+  Static assets
+```
+
+---
+
+## Content Editing
+
+All site copy lives in:
+
+```text
+lib/content/*.ts
+```
+
+The main content files are:
+
+| File            | Purpose                                          |
+| --------------- | ------------------------------------------------ |
+| `site.ts`       | Company information, contact details, and domain |
+| `nav.ts`        | Navigation links                                 |
+| `services.ts`   | The 4 services and their bullet points           |
+| `projects.ts`   | Demo projects                                    |
+| `solutions.ts`  | Problem → solution pairs                         |
+| `principles.ts` | Company principles                               |
+
+Edit these files to update the website content without changing the components.
+
+---
+
+## Roadmap
+
+### Phase 0 — Foundations
+
+**Status:** Done
+
+Project structure, design foundations, reusable components, and core setup.
+
+### Phase 1 — Frontend Rebuild
+
+**Status:** In Progress
+
+Complete the production frontend and refine the user experience.
+
+### Phase 2 — Backend MVP
+
+Planned features:
+
+* Leads API
+* PostgreSQL database
+* Admin dashboard
+
+### Phase 3 — Contact Flow + Polish
+
+* Improve contact flow
+* Lead capture
+* Final UI/UX polish
+* Production improvements
+
+### Phase 4 — Arabic / RTL
+
+Add full Arabic support with proper RTL layouts and content.
+
+### Phase 5 — Launch
+
+Final testing, deployment, production configuration, and public launch.
+
+See:
+
+```text
+docs/ARCHITECTURE.md
+```
+
+for the full architecture and phase checklists.
+
+---
+
+## Notes
+
+### Demo Projects
+
+Demo projects are intentionally labeled **"Demo project"**.
+
+Do **not** remove this label until the projects are replaced with real client work.
+
+### Contact Form
+
+The contact form is **email-only** for now.
+
+Full lead capture and backend integration are planned for **Phase 2 / Phase 3**.
+
+---
+
+## Tech Stack
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **CSS**
+* **ESLint**
+* **Turbopack**
+* **Node.js**
+* **npm**
+
+---
+
+## EL-MESBAH
+
+Software • AI • Automation
